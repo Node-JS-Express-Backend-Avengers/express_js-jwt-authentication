@@ -1,0 +1,30 @@
+{
+  "name": "jwt-authentication-backend-app",
+  "packageManager": "yarn@3.6.4",
+  "description": "Token-based authentication using JWT in a basic web application using Express.js with JavaScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Node-JS-Express-Backend-Avengers/express_js-jwt-authentication.git"
+  },
+  "keywords": [
+    "jwt",
+    "authentication",
+    "backend",
+    "express",
+    "js"
+  ],
+  "author": "quantum-adrenaline-1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Node-JS-Express-Backend-Avengers/express_js-jwt-authentication/issues"
+  },
+  "homepage": "https://github.com/Node-JS-Express-Backend-Avengers/express_js-jwt-authentication#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
