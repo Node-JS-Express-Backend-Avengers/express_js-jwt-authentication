@@ -1,9 +1,15 @@
 const expressObj = require('express');
 
+const bodyParser = require('body-parser');
+
 const constants = require('./src/util/constant');
 
 // express application object
 const expressApplication = expressObj();
+
+// applying body parsing
+expressApplication.use(bodyParser.urlencoded({extended: false}));
+expressApplication.use(bodyParser.json());
 
 // APIs on apiRouter
 const apiRouter = require('./src/api/');
