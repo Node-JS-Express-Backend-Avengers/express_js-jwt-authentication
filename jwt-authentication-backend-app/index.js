@@ -1,9 +1,9 @@
-const express = require('express');
+const expressObj = require('express');
 
 const constants = require('./src/util/constant');
 
 // express application object
-const expressApplication = express();
+const expressApplication = expressObj();
 
 // APIs on apiRouter
 const apiRouter = require('./src/api/');
