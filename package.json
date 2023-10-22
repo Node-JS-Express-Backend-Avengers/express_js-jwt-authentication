@@ -3,7 +3,7 @@
   "packageManager": "yarn@3.6.4",
   "description": "Token-based authentication using JWT in a basic web application using Express.js with JavaScript",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "jwt-authentication-backend-app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
