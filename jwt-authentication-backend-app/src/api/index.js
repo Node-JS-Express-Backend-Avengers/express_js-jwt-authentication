@@ -55,6 +55,7 @@ router.post("/login", async (req, res) => {
   // case: valid email and password for authentication
   else {
     return res.status(200).send({
+      data: { email: fetchedUser.email },
       message: `User '${credentialsPayload.email}' logged in successfully!`,
     });
   }
