@@ -82,7 +82,7 @@ const eventAPI = {
     }
   }),
   // special event
-  specialEvents: router.get("/events/special", (req, res) => {
+  specialEvents: router.get("/special", (req, res) => {
     const specialEvents = require("../static_store/special_events");
     if (specialEvents) {
       return res.status(200).send(specialEvents);
