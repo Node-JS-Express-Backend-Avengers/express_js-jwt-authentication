@@ -1,11 +1,16 @@
 const expressObj = require("express");
 
+const cors = require("cors");
+
 const bodyParser = require("body-parser");
 
 const constants = require("./src/util/constant");
 
 // express application object
 const expressApplication = expressObj();
+
+// cors policies
+expressApplication.use(cors());
 
 // applying body parsing
 expressApplication.use(bodyParser.urlencoded({ extended: false }));
