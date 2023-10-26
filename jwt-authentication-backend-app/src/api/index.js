@@ -30,10 +30,17 @@ const authenticationAPI = {
     );
     let persistedUser = await userObj.save();
     if (persistedUser && persistedUser == userObj) {
-      console.log(`User instance ${userObj} stored in DB successfully`);
-      return res
-        .status(201)
-        .send({ data: persistedUser, message: "User saved successfully!" });
+      const registerResponseObject = {
+        id: persistedUser["_id"],
+        email: persistedUser["email"],
+      };
+      console.log(
+        `User instance ${registerResponseObject} stored in DB successfully`
+      );
+      return res.status(201).send({
+        data: registerResponseObject,
+        message: "User saved successfully!",
+      });
     } else if (!persistedUser || persistedUser != userObj) {
       console.log(`Failed to persist the user ${JSON.stringify(userObj)}`);
       return res.status(500).send(null);
