@@ -1,6 +1,6 @@
 const mongooseObj = require("mongoose");
 
-const connectionUrl = "mongodb://localhost:27017/eventsdb";
+const connectionUrl = "mongodb://127.0.0.1:27017/eventsdb";
 
 const mongoDBConnectionObj = mongooseObj
   .connect(connectionUrl)
